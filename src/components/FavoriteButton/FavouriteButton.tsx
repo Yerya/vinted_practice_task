@@ -10,7 +10,7 @@ export const FavouriteButton: React.FC<FavouriteButtonProps> = ({
             className={`fav-btn ${isFavourite ? "active" : ""}`}
             onClick={onToggle}
         >
-            Favorite
+            {isFavourite ? "Remove from Favorites" : "Add to Favorites"}
         </button>
     );
 };
