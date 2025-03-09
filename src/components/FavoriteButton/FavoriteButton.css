@@ -1,0 +1,16 @@
+.fav-btn{
+    padding: 0.4rem;
+    border: 1px solid white;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+
+.fav-btn:hover{
+    background-color: rgba(255, 255, 255, 0.55);
+    color: black;
+    transform: scale(1.2);
+}
+
+.fav-btn:active {
+    transform: scale(0.95);
+}

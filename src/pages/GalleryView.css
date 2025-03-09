@@ -1,0 +1,22 @@
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+main{
+    padding: 3rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

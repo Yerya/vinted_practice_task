@@ -1,0 +1,52 @@
+.photo-tile {
+    display: flex;
+    justify-content: center;
+}
+
+.img-wrapper {
+    position: relative;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 3%;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 1rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    border-radius: 3%;
+}
+
+.overlay h2 {
+    margin: 0;
+}
+
+.overlay h3 {
+    margin: 0;
+}
+
+.overlay h2::after {
+    content: "";
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 35%;
+    height: 2px;
+    background-color: white;
+    border-radius: 1px;
+}
+
+.img-wrapper:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
